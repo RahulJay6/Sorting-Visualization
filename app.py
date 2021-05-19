@@ -1,4 +1,4 @@
-## Bubble Sort Application
+## Sort Application
 
 from tkinter import *
 import creator
@@ -26,7 +26,7 @@ def generate(sizes,canvas):
 
 
 if __name__ == '__main__': 
-    ## Initial Stuff
+    ## Initialization of window
     root = Tk()
     root.geometry("1010x400")
     root.title = "Application"
