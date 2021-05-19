@@ -7,6 +7,7 @@ import sorter
 bar_start = 2
 bar_end = 8
 bar_gap = 8
+number_of_bars = 125
 
 
 class start_window(Frame):
@@ -43,8 +44,10 @@ if __name__ == '__main__':
     #Buttons
     B1=Button(root, text ="Generate!",command = (lambda: generate(sizes,canvas)))
     B1.grid(row=1,column=0)
-    B2=Button(root, text ="Sort!",command = (lambda: sorter.bubblesort(sizes.numbers, canvas, root)))
+    B2=Button(root, text ="Bubble Sort!",command = (lambda: sorter.bubblesort(sizes.numbers, canvas, root)))
     B2.grid(row=1,column=1)
+    B3=Button(root, text ="Quick Sort!",command = (lambda: sorter.quicksort(sizes.numbers,0 , number_of_bars-1, canvas, root)))
+    B3.grid(row=1,column=2)
 
     
     draw(sizes,canvas)
