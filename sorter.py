@@ -54,10 +54,10 @@ def quicksort(numbers, start, end, canvas, window):
         draw(numbers, canvas, p)
         window.update()
 
-        
+
         quicksort(numbers, p+1, end, canvas, window)
         canvas.delete("all")
         draw(numbers, canvas, p)
         window.update()
-
+    
 
